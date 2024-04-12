@@ -61,4 +61,9 @@ Restart the Mosquitto service to apply the changes:
 sudo systemctl restart mosquitto
 ```
 
+Get Count of Connected Clients:
+```bash
+mosquitto_sub -h 4Y.XX.XXX.3 -p 1883 -u test -P testPass -t '$SYS/broker/clients/connected'
+```
+
 You have successfully set up Mosquitto MQTT broker with authentication on your Ubuntu system.
